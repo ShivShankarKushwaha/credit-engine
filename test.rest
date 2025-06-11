@@ -1,0 +1,69 @@
+### Get Credit Status
+GET https://credit-engine-seven.vercel.app/api/credit
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
+
+### Issue Credit
+POST https://credit-engine-seven.vercel.app/api/credit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
+
+{
+    "userId": "6849543491cc67a1f195bffe",
+    "actionType": "socialPost",
+    "amount": 50,
+    "metadata": {
+        "moduleName": "Advanced Credit Scoring",
+        "progress": "completed"
+    }
+}
+
+### Get User Credits
+GET https://credit-engine-seven.vercel.app/api/credit
+// Replace with an actual MongoDB ObjectId
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
+
+### Issue Credit (Invalid Action Type)
+POST https://credit-engine-seven.vercel.app/api/credit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
+
+{
+    "userId": "6849543491cc67a1f195bffe",
+    "actionType": "invalidAction",
+    "amount": 50
+}
+
+### Issue Credit (Missing Data)
+POST https://credit-engine-seven.vercel.app/api/credit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
+
+{
+    "userId": "6849543491cc67a1f195bffe"
+}
+
+### Register User
+POST https://credit-engine-seven.vercel.app/api/user/signup
+Content-Type: application/json
+
+{
+    "name": "testuser",
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+### Login User
+POST https://credit-engine-seven.vercel.app/api/user/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+### Get User profile after login
+GET https://credit-engine-seven.vercel.app/api/user/profile
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
