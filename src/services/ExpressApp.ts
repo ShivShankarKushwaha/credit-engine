@@ -5,7 +5,7 @@ import { middleware } from '../middlewares';
 export const App = (app: Application) => {
 	middleware(app);
 	app.get('/', (req, res) => {
-		res.status(200).json({ message: 'Welcome to the CREDIT ENGINE API. see more details here https://github.com/ShivShankarKushwaha/credit-engine' });
+		return res.status(200).json({ message: 'Welcome to the CREDIT ENGINE API. see more details here https://github.com/ShivShankarKushwaha/credit-engine' });
 	});
 	app.use('/api', mainRoute);
 
