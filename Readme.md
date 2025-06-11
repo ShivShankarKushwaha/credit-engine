@@ -120,10 +120,13 @@ A lightweight API designed to issue and track "thank-you" credits for various ec
   	"amount": 10,
   	"metadata": {
   		"platform": "Twitter",
-  		"postUrl": "https://example.com/post/abc"
+  		"postUrl": "https://x.com/post/abc"
   	}
   }
   ```
+## Live url test
+**For live url testing see the <a href="./test.rest">test.rest</a> file**
+
 
 ## Testing
 
