@@ -1,4 +1,4 @@
-# [Credit-Engine Service API]()
+# [Credit-Engine Service API](https://credit-engine-seven.vercel.app)
 
 A lightweight API designed to issue and track "thank-you" credits for various ecosystem interactions. This project is built with Node.js, Express, and TypeScript, following a robust, company-level directory structure for scalability and maintainability.
 
