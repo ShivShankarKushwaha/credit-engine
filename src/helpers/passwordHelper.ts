@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import env from '@/env';
+import env from '../env';
 
 export const generateSalt = async () => {
 	const salt = await bcrypt.genSalt(env.SALT_ROUNDS);

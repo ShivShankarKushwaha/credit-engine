@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { userLoginPayload, userSignupPayload } from '@/types';
-import { User } from '@/models';
-import { comparePassword, generateSalt, generateToken, hashPassword } from '@/helpers';
+import { userLoginPayload, userSignupPayload } from '../types';
+import { User } from '../models';
+import { comparePassword, generateSalt, generateToken, hashPassword } from '../helpers';
 
 const signup = async (req: Request, res: Response) => {
 	const { error } = userSignupPayload.validate(req.body);

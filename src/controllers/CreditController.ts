@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { ActionTypes } from '@/models';
-import { creditSchema } from '@/types';
-import { creditService } from '@/services';
-import { User } from '@/models';
+import { ActionTypes } from '../models';
+import { creditSchema } from '../types';
+import { creditService } from '../services';
+import { User } from '../models';
 
 const issueCredit = async (req: Request, res: Response): Promise<Response> => {
 	try {

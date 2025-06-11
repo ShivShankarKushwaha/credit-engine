@@ -1,7 +1,7 @@
 import expressWinston from 'express-winston';
 import { format, transports } from 'winston';
 import * as winstonMongoDB from 'winston-mongodb';
-import env from '@/env';
+import env from '../env';
 
 const customFormat = format.combine(
 	format.timestamp(),

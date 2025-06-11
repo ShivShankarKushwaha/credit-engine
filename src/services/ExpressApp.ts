@@ -1,6 +1,6 @@
 import { Application } from 'express';
-import { mainRoute } from '@/routes';
-import { middleware } from '@/middlewares';
+import { mainRoute } from '../routes';
+import { middleware } from '../middlewares';
 
 export const App = (app: Application) => {
 	middleware(app);

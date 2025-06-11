@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { CreditController } from '@/controllers';
-import { AuthenticateUser } from '@/helpers';
+import { CreditController } from '../controllers';
+import { AuthenticateUser } from '../helpers';
 
 export const creditRoute = Router();
 creditRoute.use(AuthenticateUser);

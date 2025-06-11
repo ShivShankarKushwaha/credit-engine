@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "src/server.ts",
 	"scripts": {
-		"dev": "tsc-watch --onSuccess \"ts-node src/server.ts\"",
+		"dev": "ts-node-dev --respawn --transpile-only src/server.ts",
 		"start": "node dist/server.js",
 		"build": "tsc -p .",
 		"test": "vitest",
@@ -65,8 +65,5 @@
 		"typescript": "^5.5.3",
 		"typescript-eslint": "^8.25.0",
 		"vitest": "^3.0.7"
-	},
-	"_moduleAliases": {
-		"@": "./dist"
 	}
 }
