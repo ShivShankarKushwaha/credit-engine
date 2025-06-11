@@ -36,10 +36,10 @@
 		"express-winston": "^4.2.0",
 		"joi": "^17.13.3",
 		"jsonwebtoken": "^9.0.2",
-		"mongoose": "^8.4.4",
+		"mongoose": "^8.15.1",
 		"redis": "^4.7.0",
-		"winston": "^3.13.0",
-		"winston-mongodb": "^5.1.1"
+		"winston": "^3.17.0",
+		"winston-mongodb": "^7.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^19.7.1",
