@@ -8,6 +8,7 @@ import { limiter } from './express-rate-limit';
 export const middleware = (app: Application) => {
 	app.use(express.json({ limit: '10mb' }));
 	app.use(cors());
+    app.set('trust proxy', 1);
 	app.use(logger);
 	app.use(cookieParser());
 	app.use(limiter);
