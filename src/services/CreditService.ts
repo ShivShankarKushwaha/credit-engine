@@ -1,5 +1,5 @@
-import  { Credit, ICredit } from '@/models/Credit';
-import {ActionTypes} from '@/models';
+import  { Credit, ICredit } from '../models/Credit';
+import {ActionTypes} from '../models';
 
 // implemented bonus for different - different action types
  const issueCredit = async (userId: string, actionType: string, amount: number, metadata?: Record<string, any>): Promise<ICredit> => {

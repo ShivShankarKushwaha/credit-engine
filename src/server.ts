@@ -1,8 +1,7 @@
-import 'module-alias/register';
 import express from 'express';
-import { App } from '@/services';
-import { dbConnect } from '@/config';
-import env from '@/env';
+import { App } from './services';
+import { dbConnect } from './config';
+import env from './env';
 
 async function startServer() {
 	const app = express();

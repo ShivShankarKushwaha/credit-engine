@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { UserController } from '@/controllers';
-import { AuthenticateUser } from '@/helpers';
-import { loginLimiter } from '@/middlewares';
+import { UserController } from '../controllers';
+import { AuthenticateUser } from '../helpers';
+import { loginLimiter } from '../middlewares';
 
 export const UserRoute = Router();
 UserRoute.post('/signup', UserController.signup);

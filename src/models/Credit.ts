@@ -1,5 +1,5 @@
 import { Schema, model, Document } from 'mongoose';
-import { CreditDTO } from '@/types';
+import { CreditDTO } from '../types';
 import {ActionTypes} from './ActionTypes';
 
 export interface ICredit extends CreditDTO, Document {

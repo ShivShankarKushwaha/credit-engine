@@ -1,7 +1,7 @@
 import Jwt from 'jsonwebtoken';
-import env from '@/env';
+import env from '../env';
 import { NextFunction, Request, Response } from 'express';
-import { User } from '@/models';
+import { User } from '../models';
 
 export const generateToken = (payload: string) => {
 	console.log('payload', payload);
